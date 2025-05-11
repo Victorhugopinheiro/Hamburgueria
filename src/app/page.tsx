@@ -40,20 +40,21 @@ export default function Home() {
       <div id="menu">
         <main className="grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb1} name="Hamburguer-smash" value={30} />
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb2} name="Hamburguer" value={10} />
+          <CardItem descricao="Dois suculentos discos de carne empilhados com queijo suíço, cebola caramelizada e um aioli de alho torrado que eleva o paladar." img={hamb1} name="Torre de Sabor" value={30} />
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb3} name="Hamburguer" value={10} />
+          <CardItem descricao="180g de carne suculenta, cheddar derretido, bacon crocante e molho barbecue." img={hamb2} name="Apocalipse Bacon" value={10} />
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb4} name="Hamburguer" value={10} />
+          <CardItem descricao="200g de carne com cheddar, muçarela, parmesão e gorgonzola derretido." img={hamb3} name="Monstro do Queijo" value={10} />
+
+          <CardItem descricao="Burger de 160g de grão-de-bico e cogumelos, guacamole, rúcula e tahine." img={hamb4} name="Harmonia Vegana" value={10} />
 
           <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb5} name="Hamburguer" value={10} />
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb6} name="Hamburguer" value={10} />
+          <CardItem descricao="180g de carne, queijo brie, geleia de frutas vermelhas e nozes caramelizadas." img={hamb6} name="Magnata do Brie" value={10} />
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb7} name="Hamburguer" value={10} />
+          <CardItem descricao="200g de angus, cebola crispy, cheddar maturado e molho de mostarda e mel." img={hamb7} name="Estrela do Texas" value={10} />
 
-          <CardItem descricao="Pão levinho de fermentação natural da Trigou, Burguer 160g, queijo prato e maionese da casa" img={hamb8} name="Hamburguer" value={10} />
+          <CardItem descricao="180g de cordeiro com queijo feta, tomate seco e molho de iogurte com hortelã." img={hamb8} name="Mediterrâneo Supremo" value={10} />
 
 
         </main>
