@@ -3,9 +3,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Preference } from "mercadopago";
 import mpClient from "@/app/lib/mercado-pago";
+import { Item } from "@/app/context/order";
 
 export async function POST(req: NextRequest) {
-    const { testeId, userEmail, totalValue } = await req.json();
+    const { testeId, userEmail, totalValue, items } = await req.json();
 
 
 
@@ -38,15 +39,17 @@ export async function POST(req: NextRequest) {
                 }),
 
                 items: [
-                    {
+                    items.map ((item:Item) => ({
+                        
                         id: "id-do-seu-produto",
-                        description: "Hamburguer",
-                        title: "Nome do produto",
-                        quantity: 1,
+                        description: `${item.name}`,
+                        title: `${item.name}`,
+                        quantity: `${item.qtd}`,
                         unit_price: Number(price),
                         currency_id: "BRL",
-                        category_id: "category", // Recomendado inserir, mesmo que não tenha categoria - Aumenta a pontuação da sua integração com o Mercado Pago
-                    },
+                        category_id: "Category Delivery", // Recomendado inserir, mesmo que não tenha categoria - Aumenta a pontuação da sua integração com o Mercado Pago
+                    
+            }))
                 ],
                 payment_methods: {
                     // Descomente para desativar métodos de pagamento
