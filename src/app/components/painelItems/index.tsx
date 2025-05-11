@@ -95,8 +95,8 @@ export function PainelItems() {
 
 
                     </div>
-                ) : (<div className="w-10/12 flex flex-col gap-8">
-                    <div className="w-full justify-center items-center my-12 flex flex-col gap-8">
+                ) : (<div className="w-10/12 flex flex-col gap-8 p-6">
+                    <div className="w-full h-fit py-4  justify-center items-center my-12 flex flex-col gap-8">
                         <h1 className="font-bold font-serif text-3xl text-gray-600">Seu Carrinho Está vazio...</h1>
                     </div>
 
