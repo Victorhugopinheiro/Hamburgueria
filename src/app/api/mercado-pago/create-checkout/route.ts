@@ -39,17 +39,17 @@ export async function POST(req: NextRequest) {
                 }),
 
                 items: [
-                    items.map ((item:Item) => ({
-                        
+                    {
+
                         id: "id-do-seu-produto",
-                        description: `${item.name}`,
-                        title: `${item.name}`,
-                        quantity: `${item.qtd}`,
+                        description: "Hamburguers",
+                        title: "Pedido de hamburguer, aguardando pagamento",
+                        quantity: 1,
                         unit_price: Number(price),
                         currency_id: "BRL",
                         category_id: "Category Delivery", // Recomendado inserir, mesmo que não tenha categoria - Aumenta a pontuação da sua integração com o Mercado Pago
-                    
-            }))
+
+                    }
                 ],
                 payment_methods: {
                     // Descomente para desativar métodos de pagamento
@@ -90,7 +90,7 @@ export async function POST(req: NextRequest) {
         });
     } catch (err) {
 
-       
+
         return NextResponse.error();
     }
 }
