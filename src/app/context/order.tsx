@@ -18,7 +18,7 @@ interface DetailOrder {
     validaEndereco: boolean
 }
 
-interface Item {
+export interface Item {
     value: number,
     valueUnic: number
     name: string,

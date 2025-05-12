@@ -36,7 +36,8 @@ export function PainelItems() {
             createMercadoPagoCheckout({
                 testeId: "123",
                 userEmail: `${session?.user?.email}`,
-                totalValue: `${totalValue}`
+                totalValue: `${totalValue}`,
+                items:`${items}`
             })
         }
 
